@@ -1,0 +1,31 @@
+.slider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.slider>.slider-item {
+  display: flex;
+  width: calc(100% - 100px);
+  padding: 20px;
+}
+
+.slider>button {
+  width: 30px;
+  height: 30px;
+}
+
+.product-image>img {
+  width: 500px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-item>.product-image>img {
+  width: 100%;
+}
+
