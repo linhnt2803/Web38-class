@@ -1,7 +1,8 @@
 window.onload = init
 
 async function init() {
-  let url = 'http://10.1.8.175:9000/data-product'
+  // let url = 'http://10.1.8.175:9000/data-product'
+  let url = 'https://5ebd45b2ec34e900161920da.mockapi.io/api/v1/data-products?fbclid=IwAR0FDvZWbNFJKzcR8kRvxL04SEmWWHQ8cusml-maRhxjoOCbI3cHJKRQAJEt'
 
   let res = await fetch(url)
   let products = await res.json()
