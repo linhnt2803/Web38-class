@@ -34,6 +34,7 @@ const handlers = {
         .skip(skip)
         .limit(limit)
         .sort(sortInfo)
+        .populate('categories', ['title'])
 
       res.json(items)
     } catch(err) {
@@ -43,7 +44,9 @@ const handlers = {
   async findOne(req, res, next) {
     try {
       let id = req.params.id
-      let item = await productModel.findById(id)
+      let item = await productModel
+        .findById(id)
+        .populate('categories', ['title'])
       res.json(item)
     } catch(err) {
       next(err)

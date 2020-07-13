@@ -1,8 +1,8 @@
 const express = require('express')
-// require module auth
 
+const authModule = require('../modules/auth')
 const authRouter = new express.Router()
 
-// router for /sign-in
+authRouter.post('/sign-in', authModule.signIn)
 
 module.exports = authRouter
