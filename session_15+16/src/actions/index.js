@@ -1,16 +1,17 @@
 // actions for 'userInfo'
 // action = (...data) => ({ type: 'ACTION_NAME', ...payload })
+import { ACTION_TYPES } from '../config'
 
 const changeEmail = (email) => {
   return {
-    type: 'UI_CHANGE_EMAIL',
+    type: ACTION_TYPES.UI_CHANGE_EMAIL,
     email
   }
 }
 
 const changeFullname = (fullname) => {
   return {
-    type: 'UI_CHANGE_FULLNAME',
+    type: ACTION_TYPES.UI_CHANGE_FULLNAME,
     fullname
   }
 }
